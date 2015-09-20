@@ -25,8 +25,10 @@ import org.json.JSONObject;
 
 import com.eebbk.mynews.MainActivity;
 import com.eebbk.mynews.R;
+import com.eebbk.mynews.subscription.HotDetails;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -144,7 +146,10 @@ public class HotSpot extends Activity{
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position,
 				long id) {
-			
+			Intent i = new Intent(HotSpot.this, HotDetails.class);
+			i.putExtra("find", position);
+			i.putExtra("search",lists.get(position));
+			startActivity(i);
 			
 		}
 		
