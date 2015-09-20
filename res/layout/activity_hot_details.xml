@@ -3,18 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    <TextView
-        android:id="@+id/tv_show_hot" 
+    <TextView 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HelloWorld2!"/>
-    
-    <ListView 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/lv_show_news">
-        
-    </ListView>
+        android:text="hello"
+        android:id="@+id/tv_show_details"/>
 
 </LinearLayout>
